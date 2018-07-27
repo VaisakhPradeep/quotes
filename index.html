@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rain musings</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+</head>
+<body>
+	<div class="page-wrapper">
+		<div class="container">
+			<div class="preview-container">
+				<label for="file-upload" class="custom-file-upload"><span>Upload</span></label>
+				<input id="file-upload" name="background-image" type="file" onchange="readURL(event)" />
+				<div class="confirmation">
+					<img src="images/check.png" id="check">
+					<img src="images/cross.png" id="cross">
+				</div>
+				<!-- <button>UPLOAD</button> -->
+				<div id="colour" class="overlay"></div>
+				<div class="text-preview">
+					<h2 id="preview-text">These are some dummy texts to check the contrast.<br> Do not go where the path may lead, go instead where there is no path and leave a trail.</h2>
+				</div>
+				<a class="download">
+					<img src="images/download.png">
+				</a>
+				<a id="test"></a>
+			</div>
+			<div class="functions-container">
+				<div class="colour function"></div>
+				<div class="opacity function"></div>
+				<div class="text function"><span>T</span></div>
+			</div>
+			<div class="controller">
+				<div class="colour-slider hidden">
+					<div id="colouredSlider" class="slider"></div>
+					<div class="black"></div>
+				</div>
+				<div class="opacity-slider hidden">
+					<div id="opacitySlider" class="slider"></div>
+				</div>
+				<div class="font-colour-slider hidden">
+					<div id="textSlider" class="slider"></div>
+					<div class="white"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script> -->
+<script type="text/javascript" src="js/html2canvas.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
