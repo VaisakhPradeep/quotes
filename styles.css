@@ -16,6 +16,8 @@ body {
   margin: 0 auto;
   position: relative;
   top: 10%; }
+  .container #preview {
+    background-size: cover; }
   .container .preview-container, .container .functions-container, .container .controller {
     background: white;
     border-radius: 12px;
@@ -26,8 +28,8 @@ body {
   .container .preview-container {
     height: 50vh;
     position: relative;
-    background-image: url("");
-      background-image-background: cover; }
+    background-size: cover;
+    background-image: url(""); }
     .container .preview-container input#file-upload {
       visibility: hidden; }
     .container .preview-container .custom-file-upload {
